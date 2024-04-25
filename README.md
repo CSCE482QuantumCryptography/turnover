@@ -1,5 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/O9jAZqCA)
-
 ## Introduction
 
 The goal of this project is to provide support for quantum-safe cryptography on Go SDK. With these, we then look into capturing different performance metrics to denote how viable post-quantum cryptography is in real-world applications.
