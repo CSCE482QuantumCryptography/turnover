@@ -36,15 +36,15 @@ Program
 
 Our product and sprint backlog can be found in Jira, with organization name "L3Harris" and project name "Post Quantum Cryptography".
 
-For exhaustive documentation on the system, please visit: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/System%20Overview.pdf
+For exhaustive documentation on the system, please visit: https://github.com/CSCE482QuantumCryptography/turnover/tree/main/docs/conops
 
-For exhaustive documentation on building, please visit: https://github.com/CSCE482QuantumCryptography/turnover/tree/main/docs
+For exhaustive documentation on building, please visit: https://github.com/CSCE482QuantumCryptography/turnover/tree/main/docs/building
 
 ## Installation
 
 For detailed instructions on installing our project, please visit: 
-- Docker instructions: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/Build%20From%20Docker.pdf
-- Build from Source: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/Build%20From%20Source.pdf
+- Docker instructions: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/building/Build%20From%20Docker.pdf
+- Build from Source: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/building/Build%20From%20Source.pdf
 
 ## Tests
 
@@ -52,15 +52,15 @@ To run unit tests, navigate towards qs509 and run with:
 
 `go test -v -run Test_FunctionName`
 
-For detailed instructions on conducting unit testing, visit: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/Running%20Our%20Program.pdf
+For detailed instructions on conducting unit testing, visit: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/conops/Running%20Our%20Program.pdf
 
 ## Execute Code
 
-For detailed instructions on running our code, please visit: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/Running%20Our%20Program.pdf
+For detailed instructions on running our code, please visit: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/conops/Running%20Our%20Program.pdf
 
 ## Environmental Variables/Files
 
-If you built from docker, all environment variables have been set for you! If you chose to build from source, please follow instructions here: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/Build%20From%20Source.pdf
+If you built from docker, all environment variables have been set for you! If you chose to build from source, please follow instructions here: https://github.com/CSCE482QuantumCryptography/turnover/blob/main/docs/building/Build%20From%20Source.pdf
 
 ## CI/CD
 
