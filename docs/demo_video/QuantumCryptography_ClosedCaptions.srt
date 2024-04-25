@@ -1,0 +1,165 @@
+1
+00:00:00,680 --> 00:00:04,720
+Hello we're the post-quantum cryptography 
+group and this is our senior capstone design  
+
+2
+00:00:04,720 --> 00:00:09,240
+project. So as a quick road map, we are 
+going to be going into: the motivation,  
+
+3
+00:00:09,240 --> 00:00:15,800
+the implementation, a quick demo of our project, 
+and as well as a quick evaluation of our solution.  
+
+4
+00:00:15,800 --> 00:00:22,600
+And here's the motivation. So, cryptography 
+is a form of communicating securely between  
+
+5
+00:00:22,600 --> 00:00:26,000
+multiple entities, and the three things that 
+it gives you is: confidentiality, integrity,  
+
+6
+00:00:26,000 --> 00:00:30,840
+and authenticity. And in our project, we want 
+to explain two term terms-- classical and  
+
+7
+00:00:30,840 --> 00:00:34,680
+post-quantum cryptography. Currently, computers 
+use classical and we're trying to prove the  
+
+8
+00:00:34,680 --> 00:00:40,600
+viability of post-quantum. Now, with the rise of 
+quantum computers, the current encryption schemes,  
+
+9
+00:00:40,600 --> 00:00:46,400
+classical, are crackable and need to be brought 
+up to speed. Our solution is to make post-quantum  
+
+10
+00:00:46,400 --> 00:00:50,520
+encryption algorithms available and easy to 
+use. Currently we've created a quantum-safe  
+
+11
+00:00:50,520 --> 00:00:55,920
+network application and measured its performance 
+for an open-source release. So, quickly going into  
+
+12
+00:00:55,920 --> 00:01:00,320
+the implementation of our project, the tech 
+stack that we mainly used was mainly: Go,  
+
+13
+00:01:00,320 --> 00:01:06,800
+Bash, and Python. And so um, for our project 
+we created a library called qs509 and as you  
+
+14
+00:01:06,800 --> 00:01:12,160
+can see in the code here, we are importing our 
+library to be used, and this Library provides  
+
+15
+00:01:12,160 --> 00:01:17,040
+the post-quantum functionality. And so here's 
+a quick overview of how the client and server  
+
+16
+00:01:17,040 --> 00:01:21,120
+kind of interact with our library. Uh the main 
+things to note are that both the client and server  
+
+17
+00:01:21,120 --> 00:01:26,200
+create certificates and they send it across to 
+each other and they verify to create the secure
+
+18
+00:01:26,200 --> 00:01:33,560
+environment. For the Mininet simulations, in this 
+image you can see geosynchronous satellites at  
+
+19
+00:01:33,560 --> 00:01:37,680
+the top, lower satellites at the bottom, and 
+terrestrial networks, such as New York to LA  
+
+20
+00:01:37,680 --> 00:01:46,000
+and New York to Tokyo, at the bottom. Going into 
+a quick demo, we can see how our system works. We  
+
+21
+00:01:46,000 --> 00:01:51,800
+are launching a Mininet topology here with two 
+hosts, H1 and H2. H1 is hosting the server and  
+
+22
+00:01:51,800 --> 00:01:56,480
+H2 is a client connecting and communicating 
+with the server. We launch the server and it  
+
+23
+00:01:56,480 --> 00:02:01,000
+starts listening to see if there's any clients 
+that want to talk to it. When a client connects,  
+
+24
+00:02:01,000 --> 00:02:05,080
+we can see a lot of information is dumped out-- 
+like a certificate being created and exchanged  
+
+25
+00:02:05,080 --> 00:02:10,000
+and a password being shared that allows them 
+to encrypt and decrypt messages as shown
+
+26
+00:02:10,000 --> 00:02:18,200
+there. Moving on to the evaluation, we used three 
+crucial steps, this was: unit and integration  
+
+27
+00:02:18,200 --> 00:02:24,240
+testing, UAT, and then comparing our results to 
+the theory. For unit testing, we tested every  
+
+28
+00:02:24,240 --> 00:02:30,120
+function individually to make sure every possible 
+execution path worked. And then for integration  
+
+29
+00:02:30,120 --> 00:02:35,120
+testing, we made sure to test that all the 
+components that we had work together correctly.  
+
+30
+00:02:35,120 --> 00:02:40,600
+We put our project back into the hands of the 
+sponsors and got a lot of positive feedback,  
+
+31
+00:02:40,600 --> 00:02:48,680
+with a unanimous agreement that we completed all 
+the required aspects of this project. Looking  
+
+32
+00:02:48,680 --> 00:02:54,240
+at our results, we can see that post-quantum 
+cryptography is very viable in regular network  
+
+33
+00:02:54,240 --> 00:03:00,320
+topologies as long as there's no high packet 
+loss or low bandwidth. Thanks and gig'em!
+
